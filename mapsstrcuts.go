@@ -1,23 +1,27 @@
-import(
+package main
+
+import (
 	"fmt"
 )
-type person struct{
+
+type person struct {
 	name string
-	age int
+	age  int
 }
-func main(){
+
+func main() {
 	grades := map[string]int{
-		"chemistry" :96,
-		"biology":98,
-		"physics":93,
+		"chemistry": 96,
+		"biology":   98,
+		"physics":   93,
 	}
 	fmt.Println(grades)
 	grades["ict"] = 66
 	fmt.Println(grades)
-	
-	aperson:=person{
+
+	aperson := person{
 		name: "kin",
-		age:52,
+		age:  52,
 	}
 	fmt.Println(aperson)
-}	
+}
